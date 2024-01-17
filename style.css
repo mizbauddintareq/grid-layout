@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  padding: 15px;
+  grid-template-columns: 80px repeat(12, 1fr);
+  grid-template-rows: 2fr 1fr 2fr 3fr;
+  gap: 15px;
+}
+
+.sidebar {
+  background-color: #7e18ff;
+  grid-row: 1 / -1;
+}
+
+.header {
+  grid-column: 2 / -1;
+  background-color: #d9d9d9;
+}
+
+.stat1 {
+  grid-column: 2 / 5;
+  background-color: #d9d9d9;
+}
+.stat2 {
+  grid-column: 5 / 8;
+  background-color: #d9d9d9;
+}
+
+.stat3 {
+  grid-column: 8 / 11;
+  background-color: #d9d9d9;
+}
+
+.stat4 {
+  grid-column: 11 / -1;
+  background-color: #d9d9d9;
+}
+
+.chat1 {
+  grid-column: 2 / 8;
+  background-color: #d9d9d9;
+}
+.chat2 {
+  grid-column: 8 / -1;
+  background-color: #d9d9d9;
+}
+.overview {
+  grid-column: 2 / 11;
+  background-color: #d9d9d9;
+}
+.reminder {
+  grid-column: 11 / -1;
+  background-color: #d9d9d9;
+}
